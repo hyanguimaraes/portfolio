@@ -1,0 +1,217 @@
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Innovative Solutions in Aircraft Maintenance and Technology</h1>
+            <p>Over a Decade of Expertise in Aviation and Advanced Technological Solutions</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a multifaceted professional, passionate about aviation and technology, with over a decade of diverse experience...</p>
+        <!-- Add more content here -->
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Services</h2>
+        <!-- Add content here -->
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <!-- Add content here -->
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <h2>Blog</h2>
+        <!-- Add content here -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Get in Touch</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-media">
+            <!-- Add social media links here -->
+        </div>
+        <p>&copy; 2024 Aircraft Maintenance Portfolio. All rights reserved.</p>
+    </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+---
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #002244;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-section {
+    background-image: url('your-image-path.jpg'); /* Add a suitable background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section .hero-content {
+    max-width: 600px;
+}
+
+.hero-section .cta-button {
+    background-color: #f90;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+.about-section, .services-section, .projects-section, .blog-section, .contact-section {
+    background-color: #f4f4f4;
+    margin: 2rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section label {
+    margin-top: 1rem;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.contact-section button {
+    background-color: #002244;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #002244;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+---
+// Smooth scrolling for internal links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
