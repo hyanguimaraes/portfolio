@@ -1,4 +1,12 @@
-@import url("arquivo.css");
+@import url("header_styles.css");
+@import url("carrossel_styles.css");
+@import url("start_styles.css");
+@import url("about_styles.css");
+@import url("services_styles.css");
+@import url("projects_styles.css");
+@import url("blog_styles.css");
+@import url("footer_styles.css");
+
 
 /*DADOS BASE*/
 :root{
@@ -7,8 +15,19 @@
     --cor_-_Lighter_navy_blue: #141E61;
     --cor_-_Medium_gray: #787A91;
     --cor_-_Light_gray: #EEEEEE;
-    --cor_-_Black: #222831;
+    --cor_-_Black: #1a1d22;
     --cor_-_Lighter_black: #31363F;
     --cor_-_Light_blue: #76ABAE;
+
+    /*FONTE*/
+    --fonte_principal: 'Roboto', sans-serif;
 }
 
+body{
+    background-color: var(--cor_-_Black);
+    font-family: var(--fonte_principal);
+    color: var(--cor_-_Light_gray);
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 380px;
+}
