@@ -1,0 +1,42 @@
+/*CABEÇALHO GERAL*/
+.cabecalho{
+    background-color: var(--cor_-_Light_gray);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 48px;
+    padding: 0  12px;
+}
+
+.container_cabecalho{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.cabecalho_menu_link{
+    text-decoration: none;
+}
+
+/*LADO ESQUERDO*/
+.cabecalho_imagem{
+    width: 36px;
+    height: 36px;
+    padding: 0  12px;
+}
+
+.cabecalho_titulo{
+    align-self: center;
+}
+
+/*LADO DIREITO*/
+.cabecalho_direito{
+    justify-content: space-evenly;
+}
+
+
+
+#cabecalho_titulo_negrito{
+    
+}

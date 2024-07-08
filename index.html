@@ -21,52 +21,48 @@
 
 <body>
     <header class="cabecalho">
-        <div class="container_cabecalho cabecalho_esquerdo"></div>
-            <button class="cabecalho_menu_hamburguer" aria-label="Menu"><i></i></button>
-            <a href="index.html"><img src="/img/Hyan_-_Foto_perfil.png" alt="" class="container_imagem" alt="Foto de perfil de Hyan Guimaraes em preto e branco com um fundo azul petróleo"></a>
-            <a href="index.html"><h1 class="cabecalho_titulo"><b class="cabecalho_titulo_negrito">Hyan Guimarães</b> | Analista de Manutenção Aeronáutica</h1></a>
+        <div class="container_cabecalho cabecalho_esquerdo">
+            <a href="index.html"><img src="/img/Hyan_-_Foto_perfil.png" alt="" class="cabecalho_imagem" alt="Foto de perfil de Hyan Guimaraes em preto e branco com um fundo azul petróleo"></a>
+            <a href="index.html"><h1 class="cabecalho_menu_link cabecalho_titulo"><b id="cabecalho_titulo_negrito">Hyan Guimarães</b> | Analista de Manutenção Aeronáutica</h1></a>
         </div>
-
+        <nav class="container_cabecalho cabecalho_direito">
+            <a href="/index.html" class="cabecalho_menu_link">Início</a>
+            <a href="/about.html" class="cabecalho_menu_link">Sobre mim</a>
+            <a href="/services_and_projects.html" class="cabecalho_menu_link">Serviços e Projetos</a>
+            <a href="/blog.html" class="cabecalho_menu_link">Blog</a>
+            <a href="/contact.html" class="cabecalho_menu_link">Contato</a>
+        </nav>
     </header>
-
-    <nav class="lista_menu_hamburguer">
-        <a href="/index.html" class="lista_menu_link">Início</a>
-        <a href="/about.html" class="lista_menu_link">Sobre mim</a>
-        <a href="#servicos" class="lista_menu_link">Serviços</a>
-        <a href="#projetos" class="lista_menu_link">Projetos</a>
-        <a href="#blog" class="lista_menu_link">Blog</a>
-        <a href="#contato" class="lista_menu_link">Contato</a>
-    </nav>
 
     <!-- INÍCIO -->
     <section id="inicio" class="secao_inicial">
         <div class="conteudo_inicial">
             <h1 id="inicio_titulo">Soluções inovadoras no Controle de Manutenção de Aeronaves</h1>
             <p id="inicio_texto">Profissional com mais de uma década de experiência na aviação executiva.</p>
-
-            <!-- CONTADORES -->
-            <div class="inicio_contadores">
-                <ul class="contadores">
-                    <li class="contador">
-                        <p class="contador_texto_superior">Mais de</p>
-                        <div class="contador" id="contador">200</div>
-                        <h3 class="contador_texto_inferior">CVAs analisadas</h3>
-                    </li>
-                    <li class="contador">
-                        <p class="contador_texto_superior">Familiaridade com mais de</p>
-                        <div class="contador" id="contador">10</div>
-                        <h3 class="contador_texto_inferior">Modelos de aeronaves</h3>
-                    </li>
-                    <li class="contador">
-                        <p class="contador_texto_superior">Total de</p>
-                        <div class="contador" id="contador">12</div>
-                        <h3 class="contador_texto_inferior">clientes satisfeitos</h3>
-                    </li>
-                </ul>               
-            </div>
-            <a href="#sobre_mim" class="botao_de_acao">Saiba mais</a>
         </div>
     </section>    
+
+    <!-- CONTADORES -->
+    <section class="inicio_contadores">
+        <ul class="contadores">
+            <li class="contador">
+                <p class="contador_texto_superior">Mais de</p>
+                <div class="contador" id="contador">200</div>
+                <h3 class="contador_texto_inferior">CVAs analisadas</h3>
+            </li>
+            <li class="contador">
+                <p class="contador_texto_superior">Familiaridade com mais de</p>
+                <div class="contador" id="contador">10</div>
+                <h3 class="contador_texto_inferior">Modelos de aeronaves</h3>
+            </li>
+            <li class="contador">
+                <p class="contador_texto_superior">Total de</p>
+                <div class="contador" id="contador">12</div>
+                <h3 class="contador_texto_inferior">clientes satisfeitos</h3>
+            </li>
+        </ul>               
+    </section>
+    <a href="/about.html" class="botao_de_acao">Saiba mais</a> 
 
     <!-- SERVIÇOS-->
     <section id="servicos" class="secao_servicos">
@@ -79,11 +75,10 @@
             <li class="item_lista" id="servicos_item">Análise de aeronaves para <b id="negrito">relatórios de pré-compra</b> de aeronaves.</li>
         </ul>
 
-        <!-- PROJETOS -->
-        <h2 class="titulo_secoes" id="Projetos_titulo">Projetos</h2>
-    </section>
-
     <!-- RODAPÉ -->
+
+
+
      
 </body>
 </html>
