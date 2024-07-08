@@ -16,7 +16,7 @@
 }
 
 #inicio_titulo{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 800;
 }
 
@@ -24,3 +24,52 @@
     padding-top: 16px;
 }
 
+/*CONTADORES*/
+.contadores{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 400px;
+}
+
+.odometro{
+    font-size: 32px;
+    font-weight: 600;
+    border: 2px solid var(--cor_-_Light_gray);
+    border-radius: 6px;
+    width: 80px;
+    margin: 16px auto;
+    padding: 8px 0;
+}
+
+.contador_texto_inferior{
+    letter-spacing: 1.5px;
+    line-height: 1.25;
+}
+
+
+/*BOTÃO DE AÇÃO*/
+.botao_de_acao{
+    margin: 16px auto;
+    padding: 16px;
+    width: 192px;
+    align-self: center;    
+    text-align: center;
+    background-color: var(--cor_-_Light_blue);
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+}
+
+.botao_de_acao:hover, .botao_de_acao:focus{
+    transform: scale(1.1);
+    background-color: var(--cor_-_Light_blue_V2);
+}
+
+.ancora_botao_de_acao{
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
