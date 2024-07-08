@@ -1,42 +1,45 @@
-/*CABEÇALHO GERAL*/
-.cabecalho{
+.cabecalho_geral{
+    width: 100vw;
+    height: 64px;
     background-color: var(--cor_-_Light_gray);
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    height: 48px;
-    padding: 0  12px;
-}
-
-.container_cabecalho{
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
+    color: var(--cor_-_Lighter_black);
 }
 
 .cabecalho_menu_link{
-    text-decoration: none;
+    text-decoration: inherit;
+    color: inherit;
+    text-align: center;
 }
 
-/*LADO ESQUERDO*/
-.cabecalho_imagem{
-    width: 36px;
-    height: 36px;
-    padding: 0  12px;
+.cabecalho_container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
 }
 
-.cabecalho_titulo{
-    align-self: center;
+#cabecalho_titulo_nome{
+    font-weight: 800;
+    font-size: 32px;
 }
 
-/*LADO DIREITO*/
+#cabecalho_foto{
+    height: 48px;
+    padding: 0 16px;
+}
+
 .cabecalho_direito{
-    justify-content: space-evenly;
+    padding-right: 8px;
+    justify-content: space-between;
 }
 
-
-
-#cabecalho_titulo_negrito{
-    
+.cabecalho_navegacao{
+    margin: 0 8px;
+    text-transform: uppercase;
+    font-weight: 400;
+    height: 100%;
 }

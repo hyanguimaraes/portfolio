@@ -1,0 +1,25 @@
+.secao_inicial{
+
+}
+
+.conteudo_inicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px 32px;
+    padding: 16px 16px;
+    background-color: var(--cor_-_Light_gray);
+    border-radius: 4px;
+    text-align: center;
+    color: var(--cor_-_Lighter_black);
+    font-weight: 600;
+}
+
+#inicio_titulo{
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#inicio_texto{
+    padding-top: 16px;
+}
