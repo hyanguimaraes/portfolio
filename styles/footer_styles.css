@@ -1,0 +1,40 @@
+
+
+@media screen and (min-width: 1024px){
+
+}
+
+@media screen and (min-width: 1728px){
+    footer{
+        border-top: 5px solid var(--cor_-_Light_blue);
+        width: 100vw;
+        background-color: var(--cor_-_Light_gray);
+    }
+
+    .rodape_navegacao{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        color: var(--cor_-_Lighter_black);
+        height: 100px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    
+    .rodape_menu_link{
+        text-decoration: inherit;
+        color: inherit;
+        text-align: center;
+    }
+    
+    .linkedin{
+        height: 75px;
+        
+    }
+
+    .ancora_botao_linkedin{
+        background-color: #0976b4;
+        margin: 16px auto;
+    }
+}
