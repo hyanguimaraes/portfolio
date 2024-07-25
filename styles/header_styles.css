@@ -15,14 +15,8 @@
         align-items: center;
         color: var(--cor_-_Lighter_black);
     }
-    
-    .cabecalho_menu_link{
-        text-decoration: inherit;
-        color: inherit;
-        text-align: center;
-    }
-    
-    .cabecalho_container{
+       
+    .cabecalho_container, .cabecalho_esquerdo{
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
@@ -49,5 +43,26 @@
         text-transform: uppercase;
         font-weight: 400;
         height: 100%;
+    }
+
+        /*REMOÇÃO DAS DECORAÇÕES PADRÃO DE ÂNCORAS*/
+    .cabecalho_menu_link{
+        text-decoration: inherit;
+        color: inherit;
+        text-align: center;
+    }
+
+        /*ANIMAÇÃO DOS LINKS DE NAVEGAÇÃO*/
+    .cabecalho_menu_link:after{
+        display:block;
+        content: '';
+        width: inherit;
+        border-bottom: solid 2px var(--cor_-_Lighter_black);  
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+    }
+
+    .cabecalho_menu_link:hover:after{
+        transform: scaleX(1);
     }
 }
