@@ -1,15 +1,16 @@
+/* CSS FILES */
 @import url("header_styles.css");
 @import url("start_styles.css");
 @import url("about_styles.css");
-@import url("services_styles.css");
+@import url("landing_page_styles.css");
 @import url("projects_styles.css");
 @import url("blog_styles.css");
 @import url("footer_styles.css");
 
 
-/*DADOS BASE*/
+/* BASIC DATA */
 :root{
-    /*CORES BASE*/
+    /* COLORS */
     --cor_-_Navy_blue: #0F044C;
     --cor_-_Lighter_navy_blue: #141E61;
     --cor_-_Medium_gray: #787A91;
@@ -21,10 +22,11 @@
     --cor_-_Light_blue_V2: #81c0c4;
     --cor_-_LinkedIn: #0976b4;
 
-    /*FONTE*/
+    /* FONTS */
     --fonte_principal: 'Roboto', sans-serif;
 }
 
+/* BASIC STYLIZATION */
 body{
     background-color: var(--cor_-_Black);
     font-family: var(--fonte_principal);
