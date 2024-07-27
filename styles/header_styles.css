@@ -35,8 +35,33 @@
     height: calc(var(--scale_-_standard-measurement)*2.0);
     width: calc(var(--scale_-_standard-measurement)*2.0);
     background-repeat: no-repeat;
-    color: var(--color_-_Lighter_black);
     background-position: center;
     border-color: transparent;
     margin-right: calc(var(--scale_-_standard-measurement)/2);
+}
+
+.header-hamburguer-menu-active{
+    background: var(--color_-_Lighter_black);
+    background-image: url("/img/Menu_aberto.svg"); /*fallback*/
+    background-image: url("/img/Menu_aberto.svg"), linear-gradient(97.54deg, var(--color_-_Light_blue) 35.49%, var(--color_-_Light_blue_V2) 165.37%);
+    height: calc(var(--scale_-_standard-measurement)*2.0);
+    width: calc(var(--scale_-_standard-measurement)*2.0);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hamburguer-menu-options{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color_-_Light_gray);
+    position: absolute;
+    width: 60vw;
+    transition: 0.25s;
+    right: -100vw;
+}
+
+.hamburguer-menu-options-active{
+    right: 0;
+    z-index: 999;
 }
