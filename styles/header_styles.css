@@ -1,68 +1,42 @@
-
-
-@media screen and (min-width: 1024px){
-
+/*HEADER STYLIZATION*/
+.container-header{
+    width: 100%;
+    background-color: var(--color_-_Light_gray);
+    color: var(--color_-_Lighter_black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-@media screen and (min-width: 1728px){
-    .cabecalho_geral{
-        width: 100vw;
-        height: 64px;
-        background-color: var(--cor_-_Light_gray);
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        color: var(--cor_-_Lighter_black);
-    }
-       
-    .cabecalho_container, .cabecalho_esquerdo{
-        display: flex;
-        flex-wrap: nowrap;
-        align-items: center;
-        text-align: center;
-    }
-    
-    #cabecalho_titulo_nome{
-        font-weight: 800;
-        font-size: 32px;
-    }
-    
-    #cabecalho_foto{
-        height: 48px;
-        padding: 0 16px;
-    }
-    
-    .cabecalho_direito{
-        padding-right: 16px;
-        justify-content: space-between;
-    }
-    
-    .cabecalho_navegacao{
-        margin: 0 8px;
-        text-transform: uppercase;
-        font-weight: 400;
-        height: 100%;
-    }
+/*LH SIDE HEADER STYLIZATION*/
+.container-header-left{
+    display: flex;
+    align-items: center;
+}
 
-        /*REMOÇÃO DAS DECORAÇÕES PADRÃO DE ÂNCORAS*/
-    .cabecalho_menu_link{
-        text-decoration: inherit;
-        color: inherit;
-        text-align: center;
-    }
+#header-picture{
+    height: calc(var(--scale_-_standard-measurement)*2.5);
+    width: calc(var(--scale_-_standard-measurement)*2.5);
+    margin: calc(var(--scale_-_standard-measurement)/2);
+}
 
-        /*ANIMAÇÃO DOS LINKS DE NAVEGAÇÃO*/
-    .cabecalho_menu_link:after{
-        display:block;
-        content: '';
-        width: inherit;
-        border-bottom: solid 2px var(--cor_-_Lighter_black);  
-        transform: scaleX(0);  
-        transition: transform 250ms ease-in-out;
-    }
+.my-name{
+    font-weight: calc(var(--font_-_main-font-weight)*2);
+    font-size: calc(var(--scale_-_standard-measurement)*1.5);
+}
 
-    .cabecalho_menu_link:hover:after{
-        transform: scaleX(1);
-    }
+#header-degree{
+    display: none;
+}
+
+/*RH SIDE HEADER STYLIZATION*/
+.header-hamburguer-menu{
+    background-image: url("/img/Menu.svg");
+    height: calc(var(--scale_-_standard-measurement)*2.0);
+    width: calc(var(--scale_-_standard-measurement)*2.0);
+    background-repeat: no-repeat;
+    color: var(--color_-_Lighter_black);
+    background-position: center;
+    border-color: transparent;
+    margin-right: calc(var(--scale_-_standard-measurement)/2);
 }
