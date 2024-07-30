@@ -60,11 +60,12 @@
     max-width: 40vw;
     transition: 0.25s;
     right: -100vw;
+    box-shadow: -3px 3px 20px;
+    z-index: 999;
 }
 
 .hamburguer-menu-options-container-active{
     right: 0px;
-    z-index: 999;
 }
 
 .hamburguer-menu-options{
@@ -76,6 +77,6 @@
     background-color: var(--color_-_Light_blue);
     color: var(--color_-_Light_gray);
     transform: scaleX(1.05);
-    font-weight: 600;
+    font-weight: calc(var(--font_-_main-font-weight)*1.5);
     border-radius: 5px;
 }
