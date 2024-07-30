@@ -1,6 +1,6 @@
 /*HEADER STYLIZATION*/
 .container-header{
-    width: 100%;
+    width: 100vw;
     background-color: var(--color_-_Light_gray);
     color: var(--color_-_Lighter_black);
     display: flex;
@@ -30,7 +30,7 @@
 }
 
 /*RH SIDE HEADER STYLIZATION*/
-.header-hamburguer-menu{
+.header-hamburguer-menu-button{
     background-image: url("/img/Menu.svg");
     height: calc(var(--scale_-_standard-measurement)*2.0);
     width: calc(var(--scale_-_standard-measurement)*2.0);
@@ -40,7 +40,7 @@
     margin-right: calc(var(--scale_-_standard-measurement)/2);
 }
 
-.header-hamburguer-menu-active{
+.header-hamburguer-menu-button-active{
     background: var(--color_-_Lighter_black);
     background-image: url("/img/Menu_aberto.svg"); /*fallback*/
     background-image: url("/img/Menu_aberto.svg"), linear-gradient(97.54deg, var(--color_-_Light_blue) 35.49%, var(--color_-_Light_blue_V2) 165.37%);
@@ -50,18 +50,32 @@
     background-position: center;
 }
 
-.hamburguer-menu-options{
-    position: absolute;
+.hamburguer-menu-options-container{
     display: flex;
     flex-direction: column;
     background-color: var(--color_-_Light_gray);
+    color: var(--color_-_Lighter_black);
     position: absolute;
-    width: 60vw;
+    min-width: 150px;
+    max-width: 40vw;
     transition: 0.25s;
     right: -100vw;
 }
 
-.hamburguer-menu-options-active{
-    right: 0;
+.hamburguer-menu-options-container-active{
+    right: 0px;
     z-index: 999;
+}
+
+.hamburguer-menu-options{
+    padding: calc(var(--scale_-_standard-measurement)*0.5);
+    transition: 0.25s;
+}
+
+.hamburguer-menu-options:hover{
+    background-color: var(--color_-_Light_blue);
+    color: var(--color_-_Light_gray);
+    transform: scaleX(1.05);
+    font-weight: 600;
+    border-radius: 5px;
 }
