@@ -2,10 +2,11 @@
 
 /*BANNER STYLIZATION*/
 .container-banner{
-    position: absolute;
+    /*position: absolute;
     left: 0;
     right: 0;
-    z-index: 500;
+    top: calc(var(--scale_-_standard-measurement)*4.0);
+    z-index: 500;*/
     margin: calc(var(--scale_-_standard-measurement)*0.5) auto;
     max-width: 70vw;
     padding: calc(var(--scale_-_standard-measurement));
@@ -24,13 +25,22 @@
 /*CAROUSEL STYLIZATION*/
 .section-carousel{
     max-width: 100vw;
+    height: auto;
+    overflow: hidden;
 }
 
+.carousel-slides{
+    transition: 0.5s ease-in-out;
+    display: none;
+}
+
+/*CAROUSEL IMAGES STYLIZATION*/
 .carousel-slides img{
     max-width: 100%;
-    max-height: 90%;
-    width: auto;
-    height: auto;
+}
+
+.carousel-slides-active{
+    display: block;
 }
 
 /*CAROUSEL MARKINGS STYLIZATION*/
@@ -47,9 +57,9 @@ input[type="radio"]{
     margin: 0 0.5em;
     font: inherit;
     color: currentColor;
-    width: 10px;
-    height: 10px;
-    border: 2px solid var(--color_-_Light_blue);
+    width: 12px;
+    height: 12px;
+    border: 3px solid var(--color_-_Light_blue);
     border-radius: 50%;
     transform: translateY(-0.075em);
     display: flex;
@@ -58,14 +68,41 @@ input[type="radio"]{
 
 input[type="radio"]::before {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--color_-_Light_gray);
-  }
+    box-shadow: inset 12px 12px var(--color_-_Light_gray);
+}
 
-  input[type="radio"]:checked::before {
+input[type="radio"]:checked::before {
     transform: scaleX(1.2);
-  }
+}
+
+/*CAROUSEL BUTTONS STYLIZATION*/
+.container-carousel-controls{
+    position: absolute;
+    top: 68vw;
+    z-index: 500;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-button{
+    font-weight: calc(var(--font_-_main-font-weight)*2.0);
+    color: var(--color_-_Light_gray);
+    background-color: var(--color_-_Light_blue);
+    border: 2px var(--color_-_Light_gray) solid;
+    border-radius: 50%;
+    padding: calc(var(--scale_-_standard-measurement)*0.5);
+}
+
+.carousel-aft-button{
+    margin-left: calc(var(--scale_-_standard-measurement)*0.5);
+}
+
+.carousel-fwd-button{
+    margin-right: calc(var(--scale_-_standard-measurement)*0.5);
+}
