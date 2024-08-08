@@ -2,11 +2,6 @@
 
 /*BANNER STYLIZATION*/
 .container-banner{
-    /*position: absolute;
-    left: 0;
-    right: 0;
-    top: calc(var(--scale_-_standard-measurement)*4.0);
-    z-index: 500;*/
     margin: calc(var(--scale_-_standard-measurement)*0.5) auto;
     max-width: 70vw;
     padding: calc(var(--scale_-_standard-measurement));
@@ -135,4 +130,10 @@ input[type="radio"]:checked::before {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 35px;
+}
+
+@media screen and (min-width: 480px){
+    .container-carousel-controls{
+        top: 60vw;
+    }
 }
