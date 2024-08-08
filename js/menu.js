@@ -1,6 +1,7 @@
 //--------- JAVASCRIPT FOR THE HAMBURGUER MENU ---------//
 
 //--- VARIABLES ---//
+
 //CAPTURING THE HTML HAMBURGUER MENU BUTTON
 const buttonHamburguerMenu = document.querySelector('.header-hamburguer-menu-button');
 
@@ -8,6 +9,7 @@ const buttonHamburguerMenu = document.querySelector('.header-hamburguer-menu-but
 const hamburguerMenuOptions = document.querySelector('.hamburguer-menu-options-container');
 
 //--- FUNCTIONS ---//
+
 //MONITORING CLICKS ON THE HAMBURGUER MENU BUTTON
 buttonHamburguerMenu.addEventListener('click', ()=> {
     //IF CLICKED, ADD THE FOLLOWING CLASSES TO THE HTML COMPONENTS.

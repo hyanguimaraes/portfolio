@@ -106,3 +106,33 @@ input[type="radio"]:checked::before {
 .carousel-fwd-button{
     margin-right: calc(var(--scale_-_standard-measurement)*0.5);
 }
+
+/*SERVICES SECTION STYLIZATION*/
+.section-main-services{
+    width: 100vw;
+}
+
+.services-title{
+    padding: var(--scale_-_standard-measurement) 0 calc(var(--scale_-_standard-measurement)*0.5) 0;
+    background-color: var(--color_-_Light_gray);
+    color: var(--color_-_Lighter_black);
+    font-weight: calc(var(--font_-_main-font-weight)*1.5);
+    border-top: 3px solid var(--color_-_Light_blue);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#services-list{
+    width: 80vw;
+    margin: auto;
+}
+
+.list-item{
+    text-align: center;
+    padding: var(--scale_-_standard-measurement) calc(var(--scale_-_standard-measurement)*2) var(--scale_-_standard-measurement) calc(var(--scale_-_standard-measurement)*2.5);
+    list-style: none;
+    background-image: url('/img/Aircraft_gear_upper_V2_-_White.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 35px;
+}

@@ -1,0 +1,69 @@
+/* FOOTER STYLIZATION */
+/* FOOTER CONTAINER STYLIZATION*/
+footer{
+    border-top: 5px solid var(--color_-_Light_blue);
+    width: 100vw;
+    background-color: var(--color_-_Light_gray);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color_-_Light_gray);
+    color: var(--color_-_Lighter_black);
+    height: calc(var(--scale_-_standard-measurement)*10);
+    font-weight: var(--font_-_main-font-weight);
+}
+
+/*FOOTER NAME STYLIZATION*/
+.footer-name-title{
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* FOOTER NAME SPACE UNICODE*/
+
+/* #footer-degree::before{
+    content: "\00a0| ";
+} */
+
+
+/*LINKEDIN BUTTON STYLIZATION*/
+.container-linkedin-button{
+    height: calc(var(--scale_-_standard-measurement)*4);
+    margin: var(--scale_-_standard-measurement) auto;
+    padding: var(--scale_-_standard-measurement);
+    width: calc(var(--scale_-_standard-measurement)*9);
+    height: auto;
+    text-align: center;
+    background-color: var(--color_-_LinkedIn);
+    border-radius: 6px;
+    transition: all .2s ease-in-out; 
+    color: var(--color_-_Light_gray);       
+}
+
+.container-linkedin-button:hover, .container-linkedin-button:focus{
+    transform: scale(1.1);
+}
+
+/*LINKEDIN BUTTON ANCHOR STYLIZATION*/
+.linkedin-button{
+    text-decoration: inherit;
+    color: inherit;
+    font-size: calc(var(--scale_-_standard-measurement)*1.5);
+    font-weight: calc(var(--font_-_main-font-weight)*1.5);
+    cursor: pointer;
+}
+
+.linkedin-button::before{
+    background-image: url(/img/LinkedIn_logo.png);
+    background-repeat: no-repeat;
+    background-size: calc(var(--scale_-_standard-measurement)*1.5) calc(var(--scale_-_standard-measurement)*1.5);
+    display: inline-block;
+    width: calc(var(--scale_-_standard-measurement)*1.5);
+    height: calc(var(--scale_-_standard-measurement)*1.5);
+    margin-right: var(--scale_-_standard-measurement);
+    margin-top: 2px;
+    background-position-y: center;
+    content: "";
+}
