@@ -21,13 +21,6 @@ footer{
     line-height: 1.5;
 }
 
-/* FOOTER NAME SPACE UNICODE*/
-
-/* #footer-degree::before{
-    content: "\00a0| ";
-} */
-
-
 /*LINKEDIN BUTTON STYLIZATION*/
 .container-linkedin-button{
     height: calc(var(--scale_-_standard-measurement)*4);
@@ -66,4 +59,33 @@ footer{
     margin-top: 2px;
     background-position-y: center;
     content: "";
+}
+
+@media screen and (min-width: 744px){
+    .footer-name-title{
+        display: flex;
+        align-items: center;
+    }
+
+    /*FOOTER DEGREE STYLIZATION*/
+    #footer-degree{
+        display: inline-block;
+        font-weight: calc(var(--font_-_main-font-weight)*2);
+        font-size: calc(var(--scale_-_standard-measurement)*1.2);
+        margin-left: calc(var(--scale_-_standard-measurement)*0.5);
+    }
+
+    #footer-name::after{
+        content: "\00a0| ";
+    }
+}
+
+@media screen and (min-width: 1440px){
+    footer{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100vw;
+        height: auto;
+        justify-content: space-evenly;
+    }
 }

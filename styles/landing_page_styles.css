@@ -40,7 +40,7 @@
 
 /*CAROUSEL MARKINGS STYLIZATION*/
 .container-carousel-markings{
-    margin: calc(var(--scale_-_standard-measurement)*0.5) 0;    
+    padding: calc(var(--scale_-_standard-measurement)*0.5) 0;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +78,7 @@ input[type="radio"]:checked::before {
 /*CAROUSEL BUTTONS STYLIZATION*/
 .container-carousel-controls{
     position: absolute;
-    top: 68vw;
+    top: 250px;
     z-index: 500;
     width: 100vw;
     display: flex;
@@ -92,6 +92,7 @@ input[type="radio"]:checked::before {
     border: 2px var(--color_-_Light_gray) solid;
     border-radius: 50%;
     padding: calc(var(--scale_-_standard-measurement)*0.5);
+    box-shadow: 3px 3px 10px var(--color_-_Lighter_black);
 }
 
 .carousel-aft-button{
@@ -101,6 +102,70 @@ input[type="radio"]:checked::before {
 .carousel-fwd-button{
     margin-right: calc(var(--scale_-_standard-measurement)*0.5);
 }
+
+/*COUNTERS SECTION STYLIZATION*/
+.counters{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 80vw;
+    margin: 16px   auto;    
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding: 16px 0px;
+}
+
+.counter{
+    margin: 0 auto;
+    padding: 16px;
+    width: 120px;
+}
+
+.odometer{
+    font-size: 32px;
+    font-weight: 600;
+    border: 2px solid var(--color_-_Light_gray);
+    border-radius: 6px;
+    margin: 16px auto;
+    padding: 8px 0;
+    letter-spacing: 1.5px;
+}
+
+.counter-lower-text{
+    letter-spacing: 1.5px;
+    line-height: 1.25;
+}
+
+/*CALL TO ACTION BUTTON*/
+.call-to-action-button{
+    margin: 16px auto;
+    padding: 16px;
+    width: 192px;
+    align-self: center;    
+    text-align: center;
+    background-color: var(--color_-_Light_blue);
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+}
+
+.call-to-action-button:hover, .call-to-action-button:focus{
+    transform: scale(1.1);
+    background-color: var(--color_-_Light_blue_V2);
+}
+
+.call-to-action-button-anchor{
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 
 /*SERVICES SECTION STYLIZATION*/
 .section-main-services{
@@ -132,8 +197,153 @@ input[type="radio"]:checked::before {
     background-size: 35px;
 }
 
-@media screen and (min-width: 480px){
+.bold{
+    font-weight: calc(var(--font_-_main-font-weight)*1.5);
+}
+
+@media screen and (min-width: 428px){
+    /*CAROUSEL BUTTONS STYLIZATION*/
     .container-carousel-controls{
-        top: 60vw;
+        top: 285px;
+    }
+
+    /*COUNTERS STYLILZATION*/
+    .counters{
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 744px){
+    /*BANNER STYLIZATION*/
+    .container-banner{
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        right: 0;
+    }
+
+    /*CAROUSEL BUTTONS STYLIZATION*/
+    .container-carousel-controls{
+        top: 240px;
+    }
+
+    /*COUNTERS SECTION STYLIZATION*/
+    .counters{
+        position: absolute;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin: 0   auto;
+        right: 0;
+        left: 0;
+        top: 30vw;
+        padding: 0;
+    }
+
+    /*SERVICES SECTION STYLIZATION*/
+    .list-item{
+        padding: var(--scale_-_standard-measurement) calc(var(--scale_-_standard-measurement)*2) var(--scale_-_standard-measurement) calc(var(--scale_-_standard-measurement)*0.5);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    /*BANNER STYLIZATION*/
+    .container-banner{
+        margin: calc(var(--scale_-_standard-measurement)*1) auto;
+        max-width: 50vw;
+    }
+
+    /*CAROUSEL SLIDES STYLIZATION*/
+    .carousel-slides img{
+        width: 100vw;
+    }
+
+    /*CAROUSEL BUTTONS STYLIZATION*/
+    .container-carousel-controls{
+        top: 30vw;
+    }
+
+    /*COUNTERS STYLIZATION*/
+    .counters{
+        top: 35vw;
+        width: 60vw;
+    }
+
+    /*SERVICES SECTION STYLIZATION*/
+    #services-list{
+        width: 55vw;
+        margin: auto;
+    }
+    
+    .list-item{
+        padding: calc(var(--scale_-_standard-measurement)*1.5) var(--scale_-_standard-measurement) calc(var(--scale_-_standard-measurement)*1.5) calc(var(--scale_-_standard-measurement)*2);
+    }
+}
+
+@media screen and (min-width: 1440px){
+    /*BANNER STYLIZATION*/
+    .container-banner{
+        max-width: 35vw;
+    }
+
+    .banner-text{
+        margin-top: calc(var(--scale_-_standard-measurement)*1);
+    }
+
+    /*CAROUSEL BUTTONS STYLIZATION*/
+    .container-carousel-controls{
+        top: 30vw;
+    }
+
+    .carousel-aft-button{
+        margin-left: var(--scale_-_standard-measurement);
+    }
+    
+    .carousel-fwd-button{
+        margin-right: var(--scale_-_standard-measurement);
+    }
+
+    /*COUNTERS STYLIZATION*/
+    .counters{
+        top: 40vw;
+        width: 45vw;
+    }
+
+    /*SERVICES SECTION STYLIZATION*/
+    #services-list{
+        display: grid;
+        width: 75vw;
+        grid-template-columns: auto auto;
+        column-gap: var(--scale_-_standard-measurement);
+    }
+
+    .list-item{
+        padding: calc(var(--scale_-_standard-measurement)*1.5) var(--scale_-_standard-measurement) calc(var(--scale_-_standard-measurement)*1.5) calc(var(--scale_-_standard-measurement)*2.5);
+    }
+}
+
+@media screen and (min-width: 1728px){
+    /*CAROUSEL BUTTONS STYLIZATION*/
+    .carousel-aft-button{
+        margin-left: calc(var(--scale_-_standard-measurement)*1.5);
+    }
+    
+    .carousel-fwd-button{
+        margin-right: calc(var(--scale_-_standard-measurement)*1.5);
+    }
+
+    /*COUNTERS STYLIZATION*/
+    .counters{
+        top: 40vw;
+        width: 40vw;
+    }
+
+    /*SERVICES SECTION STYLIZATION*/
+    #services-list{
+        width: 70vw;
+        grid-template-columns: auto auto;
+    }
+
+    .list-item{
+        padding: calc(var(--scale_-_standard-measurement)*1.5) var(--scale_-_standard-measurement) calc(var(--scale_-_standard-measurement)*1.5) calc(var(--scale_-_standard-measurement)*1);
     }
 }
