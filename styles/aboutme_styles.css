@@ -26,7 +26,6 @@
     text-align: left;
     line-height: 1.5;
     margin-top: var(--scale_-_standard-measurement);
-
 }
 
 /*QUALIFICATIONS SECTION STYLIZATION*/
@@ -99,6 +98,10 @@
     width: calc(var(--scale_-_standard-measurement)*6.25);
 }
 
+.aircraft-model-icon-caravan{
+    height: calc(var(--scale_-_standard-measurement)*3.125);
+}
+
 .aircraft-model-text{
     margin-top: var(--scale_-_standard-measurement);
     text-align: center;
@@ -107,3 +110,111 @@
     line-height: 1.5;
 }
 
+@media screen and (min-width: 744px){
+    .about-me-text-and-picture{
+        width: 90vw;
+    }
+
+    .about-me-picture-container > img{
+        width: 35vw;
+    }
+
+    .qualifications{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: var(--scale_-_standard-measurement);
+    }
+
+    .aircraft-models{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: var(--scale_-_standard-measurement);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .about-me-text-and-picture{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: var(--scale_-_standard-measurement) auto;
+        align-items: center;
+    }
+
+    .about-me-picture-container{
+        width: 25%;
+        margin-left: 10vw;
+    }
+
+    .about-me-picture-container > img{
+        width: 20vw;
+    }
+
+    .about-me-paragraph{
+        text-align: justify;
+        margin-top: var(--scale_-_standard-measurement);    
+    }
+
+    #about-me-paragraph-01{
+        width: 50%;
+        margin: 0 0;
+    }
+
+    .qualifications-title, .aircraft-models-title{
+        font-size: calc(var(--scale_-_standard-measurement)*1.5);
+    }
+
+    .qualifications{
+        gap: calc(var(--scale_-_standard-measurement)*1.5);
+    }
+
+    .aircraft-models{
+        grid-template-columns: auto auto auto;
+        gap: calc(var(--scale_-_standard-measurement)*1.5);
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .about-me-text-and-picture{
+        width: 95vw;
+        justify-content: space-between;
+    }
+
+    .about-me-picture-container{
+        width: 15%;
+        margin: 0   0;
+        padding-left: 5vw;
+    }
+
+    .about-me-picture-container > img{
+        width: 10vw;
+    }
+
+    #about-me-paragraph-01{
+        width: 75%;
+        margin: 0 0;
+    }
+
+    .about-me-paragraph > br{
+        display: none;
+    }
+
+    .qualifications{
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .aircraft-models{
+        gap: calc(var(--scale_-_standard-measurement)*2);
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .about-me-picture-container{
+        width: 15%;
+        margin: 0   0;
+        padding-left: 8vw;
+    }
+
+    .about-me-picture-container > img{
+        width: 8vw;
+    }
+}
