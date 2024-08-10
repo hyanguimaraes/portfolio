@@ -1,0 +1,109 @@
+/*ABOUT ME STYLIZATION*/
+.about-me-upper-section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-text-and-picture{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin: var(--scale_-_standard-measurement) auto;
+}
+
+.about-me-picture-container{
+    margin: 0   auto;
+}
+
+.about-me-picture-container > img{
+    width: 70vw;
+}
+
+.about-me-paragraph{
+    text-align: left;
+    line-height: 1.5;
+    margin-top: var(--scale_-_standard-measurement);
+
+}
+
+/*QUALIFICATIONS SECTION STYLIZATION*/
+.qualifications-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.qualifications-title{
+    width: 100vw;
+    padding: var(--scale_-_standard-measurement) 0 calc(var(--scale_-_standard-measurement)*0.5) 0;
+    background-color: var(--color_-_Light_gray);
+    color: var(--color_-_Lighter_black);
+    font-weight: calc(var(--font_-_main-font-weight)*1.5);
+    border-top: 3px solid var(--color_-_Light_blue);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.qualification{
+    margin-top: calc(var(--scale_-_standard-measurement)*2);
+    width: calc(var(--scale_-_standard-measurement)*20);
+}
+
+.qualification-icon{
+    margin: 0   auto;
+    height: calc(var(--scale_-_standard-measurement)*6.25);
+    width: calc(var(--scale_-_standard-measurement)*6.25);
+}
+
+.qualification-text{
+    margin-top: var(--scale_-_standard-measurement);
+    text-align: center;
+    font-size: calc(var(--scale_-_standard-measurement)*1.5);
+    font-weight: calc(var(--font_-_main-font-weight)*1.5);
+    line-height: 1.5;
+}
+
+.about-me-lower-section{
+    margin: var(--scale_-_standard-measurement) 0;
+}
+
+/*AIRCRAFT MODELS STYLIZATION*/
+.aircraft-models-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aircraft-models-title{
+    width: 100vw;
+    padding: var(--scale_-_standard-measurement) 0 calc(var(--scale_-_standard-measurement)*0.5) 0;
+    background-color: var(--color_-_Light_gray);
+    color: var(--color_-_Lighter_black);
+    font-weight: calc(var(--font_-_main-font-weight)*1.5);
+    border-top: 3px solid var(--color_-_Light_blue);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.aircraft-model{
+    margin-top: calc(var(--scale_-_standard-measurement)*2);
+    width: calc(var(--scale_-_standard-measurement)*20);
+}
+
+.aircraft-model-icon{
+    margin: 0   auto;
+    height: calc(var(--scale_-_standard-measurement)*6.25);
+    width: calc(var(--scale_-_standard-measurement)*6.25);
+}
+
+.aircraft-model-text{
+    margin-top: var(--scale_-_standard-measurement);
+    text-align: center;
+    font-size: calc(var(--scale_-_standard-measurement)*1.5);
+    font-weight: calc(var(--font_-_main-font-weight)*1.5);
+    line-height: 1.5;
+}
+
