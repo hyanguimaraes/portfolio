@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyan Guimaraes</title>
+
+    <!-- ICON -->
+    <link rel="icon" href="/img/Hyan_-_Picture.png" type = "image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="container-header">
+        <div class="container-header-left">
+            <a href="index.html" class="anchors"><img src="/img/Hyan_-_Picture.png" alt="Foto de perfil com fundo azul petróleo, com a imagem em preto e branco de um homem adulto, de cabelos pretos, pele branca, olhos castanhos, barba cheia e de óculos" class="cabecalho-foto" id="header-picture"></a>
+            <a href="index.html" class="anchors"><h1 class="my-name" id="header-name">Hyan Guimarães</h1></a>
+            <a href="index.html" class="anchors"><h2 class="my-title" id="header-degree">Tecnólogo em Manutenção de Aeronaves</h2></a>
+        </div>
+        <div class="container-header-right">
+            <button class="header-hamburguer-menu-button" aria-label="menu"><i></i></button>
+            <nav class="options-container">
+                <a href="aboutme.html" class="menu-options anchors">Sobre mim</a>
+                <a href="services.html" class="menu-options anchors">Serviços e projetos</a>
+                <a href="blog.html" class="menu-options anchors">Blog</a>
+                <a href="contact".html" class="menu-options anchors">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav class="hamburguer-menu-options-container">
+        <a href="aboutme.html" class="hamburguer-menu-options anchors">Sobre mim</a>
+        <a href="services.html" class="hamburguer-menu-options anchors">Serviços e projetos</a>
+        <a href="blog.html" class="hamburguer-menu-options anchors">Blog</a>
+        <a href="contact".html" class="hamburguer-menu-options anchors">Contato</a>
+    </nav>
+
+    <!-- MAIN -->
+        <!-- OFERED SERVICES -->
+        <h2 class="main-title">Serviços prestados:</h2>
+        <!-- AIRCRAFT MAINTENANCE CONTROL SECTION -->
+        <section class="aircraft-maintenance-control-section">
+            <h3 class="amc-title">Consultoria completa em CTM</h3>
+            <div class="amc-map-image-container">
+                <img src="" alt="Imagem" id="aircraft-maintence-map">
+            </div>
+            <div class="amc-consulting-paragraphs">
+                <p><span class="amc-text-highlight">Consultoria completa no Controle de Manutenção das suas aeronaves!</span> Tenha seus próprios mapas de manutenção personalizados. Receba e-mails informativos semanais listando as próximas manutenções das suas aeronaves.</p>
+                <p>Receba <span class="amc-text-italic">briefings</span> e roteiros de manutenção antes da contratação de serviços de manutenção programada, para alinhamento das manutenções necessárias na aeronave.</p>
+                <p>Tenha todos os documentos e rastreabilidades das suas aeronaves digitalizados e disponíveis em qualquer lugar!</p>
+                <p>Contato 24 horas via <span class="amc-text-italic"></span>Whatsapp</span> em caso de dúvidas.</p>
+            </div>
+            <h3 class="amc-title">Mapas de manutenção personalizados</h3>
+            <div class="amc-map-image-container">
+                <img src="/img/Mapa_manutencao_exemplo.gif" alt="Mapa de manutenção de aeronave totalmente automatizado em Excel" id="aircraft-maintence-map">
+            </div>
+            <div class="amc-map-paragraphs">
+                <p>Mapas de manutenção totalmente personalizados, com as cores e logo da sua empresa e foto da aeronave. Uma vez atualizados com as informações das cadernetas e rastreabilidades da aeronave para o mapa calcular de maneira 100% automatizada todos os vencimentos futuros.</p>
+                <p #destaque>Com ele, basta apenas um click para gerar  uma projeção de manutenção:</p>
+                <ul class="amc-list">
+                    <li class="amc-list-item">Itens vencidos;</li>
+                    <li class="amc-list-item">Próximos 30 dias ou 50 horas</li>
+                    <li class="amc-list-item">Próximos 180 dias ou 100 horas</li> 
+                    <li class="amc-list-item">Próximos 365 dias ou 200 horas</li>
+                </ul>                
+            </div>
+        </section>
+
+    <!-- FOOTER -->
+    <footer class="container-footer">
+        <div class="footer-name-title">
+            <h3 class="my-name" id="footer-name">Hyan Guimarães</h3>
+            <p class="my-degree" id="footer-degree">Tecnólogo em Manutenção de Aeronaves</p>
+        </div>
+        <div class="container-linkedin-button">
+            <a href="https://www.linkedin.com/in/hyanguimaraes/" class="linkedin-button">LinkedIn</a> 
+        </div>
+    </footer>
+
+     <!-- SCRIPT -->
+     <script src="/js/menu.js"></script>
+
+</body>
+</html>

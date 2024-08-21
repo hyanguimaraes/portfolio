@@ -3,7 +3,7 @@
 @import url("start_styles.css");
 @import url("aboutme_styles.css");
 @import url("landing_page_styles.css");
-@import url("projects_styles.css");
+@import url("services_styles.css");
 @import url("blog_styles.css");
 @import url("footer_styles.css");
 
@@ -38,6 +38,7 @@ body{
     font-size: var(--scale_-_standard-measurement);
     font-weight: var(--font_-_main-font-weight);
     min-width: calc(var(--scale_-_standard-measurement)*23);
+    min-height: 100%;
 }
 
 .anchors{

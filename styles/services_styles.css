@@ -1,0 +1,21 @@
+/*SERVICES STYLIZATION*/
+
+/*AIRCRAFT MAINTENANCE CONTROL SECTION*/
+.main-title, .amc-title{
+    width: 100vw;
+    padding: var(--scale_-_standard-measurement) 0 calc(var(--scale_-_standard-measurement)*0.5) 0;
+    background-color: var(--color_-_Light_gray);
+    color: var(--color_-_Lighter_black);
+    font-weight: calc(var(--font_-_main-font-weight)*1.5);
+    border-top: 3px solid var(--color_-_Light_blue);
+    text-align: center;
+    text-transform: uppercase; 
+}
+
+.amc-title{
+    text-align: left;
+}
+
+.amc-map-image-container img{
+    max-width: 100vw;
+}
